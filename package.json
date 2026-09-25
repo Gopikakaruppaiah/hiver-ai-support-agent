@@ -1,0 +1,17 @@
+{
+  "name": "hiver-ai-support-agent",
+  "private": true,
+  "version": "0.1.0",
+  "description": "One-command dev launcher. Run 'npm install' once, then 'npm run dev' to start backend + frontend together.",
+  "scripts": {
+    "setup": "python scripts/setup_check.py",
+    "backend": "python -m uvicorn backend.app.main:app --reload --port 8000",
+    "frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run backend\" \"npm run frontend\"",
+    "test": "python -m pytest backend/tests/ -v",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

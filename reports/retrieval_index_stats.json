@@ -1,0 +1,11 @@
+{
+  "n_messages_indexed": 46740,
+  "spacy_model": "en_core_web_md",
+  "embedding_dim": 300,
+  "spacy_embed_time_sec": 44.34,
+  "spacy_embed_msgs_per_sec": 1054.1,
+  "spacy_oov_zero_vector_count": 133,
+  "spacy_oov_zero_vector_pct": 0.28,
+  "tfidf_build_time_sec": 1.8,
+  "tfidf_vocab_size": 20000
+}

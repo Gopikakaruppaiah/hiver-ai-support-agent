@@ -1,0 +1,5 @@
+{
+  "status": "PENDING_HUMAN_ANNOTATION",
+  "n_labeled": 0,
+  "message": "No human_label_intent values found in data/golden/golden_pool_candidates.csv. Run evaluation/annotation/golden_annotation_tool.html, then evaluation/annotation/merge_labels.py, then re-run this script."
+}

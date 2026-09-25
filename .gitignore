@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Data (large raw/processed files, not meant for git — see data/README.md)
+data/raw/*.csv
+data/processed/*.csv
+# NOTE: data/golden/*.csv (golden_pool_candidates.csv, golden_eval_200.csv)
+# is intentionally NOT ignored -- these are the actual evaluation assets
+# (including any human annotation work) and must be committed/preserved.
+
+# Models (large binary artifacts, regenerable via scripts/)
+models/*.pkl
+models/*.index
+models/*.npy
+
+# Env / secrets
+.env
+*.env.local
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+node_modules/
+
+# OS/editor
+.DS_Store
+.vscode/
+*.log
+
+.venv/
